@@ -1,7 +1,7 @@
 #  Sistem Pemantauan & Deteksi Dini Banjir Berbasis ESP32
 
 > **Gambaran Proyek (Overview):**  
-> Repositori ini berisi program sistem pendeteksi dini banjir menggunakan mikrokontroler **ESP32** dan framework **ESP-IDF (C)**. Program ini dirancang untuk membaca ketinggian air secara *real-time* berbasis sensor ultrasonik.  
+> Repositori ini berisi program sistem pendeteksi dini banjir menggunakan mikrokontroler **ESP32** dan framework **ESP-IDF (C)**. Program ini dirancang untuk membaca ketinggian air secara *real-time* (butuh penyesuaian) berbasis sensor ultrasonik.  
 > 
 > Kode yang ada di repositori ini **dapat digunakan secara langsung untuk alat fisik di dunia nyata maupun dijalankan di platform simulasi seperti Wokwi**.
 
@@ -39,9 +39,9 @@
 
 ##  Batas Indikator Ketinggian Air (Threshold)
 
-- 🟢 **AMAN (`> 150 cm`)**: Air berada di batas normal. LED Hijau menyala.
-- 🟡 **SIAGA (`50 cm - 150 cm`)**: Air mulai naik mendekati pemukiman/jembatan. LED Kuning menyala.
-- 🔴 **BAHAYA (`< 50 cm`)**: Air berada di level kritis/hampir meluap. LED Merah menyala dan Buzzer berbunyi secara intermiten (*beep-beep*).
+- 🟢 **AMAN**: Air berada di batas normal. LED Hijau menyala.
+- 🟡 **SIAGA**: Air mulai naik mendekati pemukiman/jembatan. LED Kuning menyala.
+- 🔴 **BAHAYA**: Air berada di level kritis/hampir meluap. LED Merah menyala dan Buzzer berbunyi secara intermiten (*beep-beep*).
 
 ---
 
